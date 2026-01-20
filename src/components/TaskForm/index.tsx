@@ -1,19 +1,22 @@
-import { Input } from '../Input';
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
+
+import { Plus } from "lucide-react";
+import { Input } from "../Input";
 
 export function TaskForm() {
   return (
     <>
-      <p className={styles.titleform}>Add new Task</p>
-      <form>
-        <div className={styles.form}>
-          <Input
-            id='input'
-            type='text'
-            placeholder='Enter task title'
-          />
+      <form className={styles.formContainer}>
+        <p className={styles.titleForm}>Add new Task</p>
+        <div className={styles.inputForm}>
+          <Input id="input" type="text" placeholder="Enter task title" />
+
+          <div className={styles.btnForm}>
+            <Plus />
+            <p>Add Task</p>
+          </div>
         </div>
       </form>
     </>
-  )
+  );
 }

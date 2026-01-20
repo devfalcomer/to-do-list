@@ -1,0 +1,33 @@
+.formContainer {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.titleForm {
+  font-weight: bold;
+  display: flex;
+  margin-right: 30vh;
+}
+
+.inputForm {
+  border-top: 1px solid var(--gray-300);
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  display: flex;
+}
+
+.btnForm {
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+  margin-left: 1rem;
+  border-radius:0.5rem;
+  padding: 0.8rem;
+}
+
