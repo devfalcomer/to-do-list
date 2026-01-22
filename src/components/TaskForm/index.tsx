@@ -1,6 +1,5 @@
 import styles from "./styles.module.css";
 
-import { Plus } from "lucide-react";
 import { Input } from "../Input";
 
 export function TaskForm() {
@@ -8,13 +7,15 @@ export function TaskForm() {
     <>
       <form className={styles.formContainer}>
         <p className={styles.titleForm}>Add new Task</p>
-        <div className={styles.inputForm}>
-          <Input id="input" type="text" placeholder="Enter task title" />
 
-          <div className={styles.btnForm}>
-            <Plus />
-            <p>Add Task</p>
-          </div>
+        <div className={styles.divider}></div>
+
+        <div className={styles.inputRow}>
+          <Input id="task" type="text" placeholder="Enter task title" />
+
+          <button type="submit" className={styles.btnForm}>
+            + Add Task
+          </button>
         </div>
       </form>
     </>
